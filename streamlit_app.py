@@ -5,11 +5,11 @@ from scrapfly import ScrapflyClient, ScrapeConfig
 from pydantic import BaseModel
 
 # Initialize Scrapfly API client
-scrapfly_api_key = 'scp-live-1627ac8eb5d1466a948fa214bc49e8d5'  # Replace with your Scrapfly API key
+scrapfly_api_key =  os.getenv('SCRAPFLY')
 scrapfly_client = ScrapflyClient(key=scrapfly_api_key)
 
 # Initialize OpenAI API
-api_key = 'sk-proj-AO1ERZlWI9DG2iEeJDWgT3BlbkFJ6ypqAE5ySnFNop8oOwTl'  # Replace with your OpenAI API key
+api_key = os.getenv('OPENAI')
 openai_client = OpenAI(
     api_key=api_key,
 )
