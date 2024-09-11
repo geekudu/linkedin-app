@@ -3,6 +3,7 @@ from openai import OpenAI
 from bs4 import BeautifulSoup
 from scrapfly import ScrapflyClient, ScrapeConfig
 from pydantic import BaseModel
+import os
 
 # Initialize Scrapfly API client
 scrapfly_api_key =  os.getenv('SCRAPFLY')
