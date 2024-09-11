@@ -1,5 +1,5 @@
 streamlit
-scrapfly
+scrapfly-sdk
 pydantic
 openai
 beautifulsoup4
